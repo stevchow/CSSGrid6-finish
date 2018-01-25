@@ -32,4 +32,20 @@ If we combine auto with `fr`, width of auto columns and rows will follow the val
 put in on specific class of the item. <br/>
 Using `span` for combine columns and rows. It take number as parameter. Example : `grid-column:span 4` means it going to combine 4 columns into one columns. But, it not replace the item. It combine the columns space, not the columns it self. So the rest of the item in columns or rows will be implicitly pushed into the next columns or rows. If we put too high number as span params than the columns or rows actually or explicitly define, it will create a implicit columns and row.
 
+### part10
+---
+
+> placing git item with track number inside `git-column` and `git-row`
+
+In inspect element, layout tab at firefox devtools, when you tick the show line tool after ticking your container. There is a number show up from 1,2,3 so on. That is track number. <br/>
+We can take those number and apply it on `git-column` and `git-row`.
+example :
+
+```
+grid-column: 1/-1;
+grid-row: 2/span 3;
+```
+-1 means we take the entire columns or rows.
+
+We can also still use span and combine it with `/`, on the left and on the right side of `/`.
 > Note : practicing CSS Grid in Firefox Developer Edition using VSCode with Emmet abbrevation.
