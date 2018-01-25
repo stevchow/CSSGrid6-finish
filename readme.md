@@ -47,5 +47,9 @@ grid-row: 2/span 3;
 ```
 -1 means we take the entire columns or rows.
 
+### part 11
+---
+Spanning & Placing Cardio! short exercise.
+
 We can also still use span and combine it with `/`, on the left and on the right side of `/`.
 > Note : practicing CSS Grid in Firefox Developer Edition using VSCode with Emmet abbrevation.
