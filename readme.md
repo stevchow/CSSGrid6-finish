@@ -26,6 +26,10 @@ If we combine auto with `fr`, width of auto columns and rows will follow the val
 
 ### part 9
 ---
+> `grid-column:span ...` and `grid-row:span ...`  - put it on specific class item
 
+!without `template`. <br/>
+put in on specific class of the item. <br/>
+Using `span` for combine columns and rows. It take number as parameter. Example : `grid-column:span 4` means it going to combine 4 columns into one columns. But, it not replace the item. It combine the columns space, not the columns it self. So the rest of the item in columns or rows will be implicitly pushed into the next columns or rows. If we put too high number as span params than the columns or rows actually or explicitly define, it will create a implicit columns and row.
 
 > Note : practicing CSS Grid in Firefox Developer Edition using VSCode with Emmet abbrevation.
