@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CSS Grid part 12</title>
+  <title>CSS Grid part 13</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -14,6 +14,7 @@
     <div class="item item3">item 03</div>
     <div class="item item4">item 04</div>
     <div class="item item5">item 05</div>
+    <div class="item item1">item 06</div>
   </div>
 
 <style>
@@ -21,10 +22,7 @@
     display: grid;
     grid-gap: 20px;
     border: 10px solid yellowgreen;
-    grid-template-columns: repeat(auto-fill, 100px);
-  }
-  .item5 {
-    grid-column-end: -1;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 </style>
 </body>

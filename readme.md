@@ -58,4 +58,57 @@ We can also still use span and combine it with `/`, on the left and on the right
 ### part 12
 ---
 
-> Note : practicing CSS Grid in Firefox Developer Edition using VSCode with Emmet abbrevation.
+> `auto-fit` and `auto-fill` most likely have a same feature but..
+
+`auto-fit` allows you to create explicit track at the end of item. <br/>
+`auto-fill` allows you to create explicit track at the end of the screen. You can see it more clear with inspecting the element with grid support. Use cases are like 
+```
+grid-template-columns: repeat(auto-fit, 100px);
+```
+with `auto-fit` setup, you can't move existing item to explicit end space, because there is no more room that created explicitly. <br/> But with `auto-fill`, because it create explicit track at the end of screen, <br/> so if you only have 5 item (look at index12), you can move item to the end of row because there is a room created explicitly by `auto-fill`
+
+### part 13
+---
+> parameter `minmax(a,b)`
+
+default use can just use this code
+```
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+```
+this code make your item responsive, not only reduce the size along with screen smaller, but it also push item to new row, this make this incredible XD.
+
+### part 14
+---
+
+### part 15
+---
+
+### part 15
+---
+
+### part 17
+---
+
+### part 18
+---
+
+### part 19
+---
+
+### part 20
+---
+
+### part 21
+---
+
+### part 22
+---
+
+### part 23
+---
+
+### part 24
+---
+
+### part 25
+---
