@@ -1,5 +1,7 @@
 CSSGrid by WesBos
 --
+> Note : practicing CSS Grid in Firefox Developer Edition using VSCode with Emmet abbrevation.
+
 ### part6 
 ---
 > grid-auto-flow:row
@@ -52,4 +54,8 @@ grid-row: 2/span 3;
 Spanning & Placing Cardio! short exercise.
 
 We can also still use span and combine it with `/`, on the left and on the right side of `/`.
+
+### part 12
+---
+
 > Note : practicing CSS Grid in Firefox Developer Edition using VSCode with Emmet abbrevation.
