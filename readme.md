@@ -40,13 +40,14 @@ Using `span` for combine columns and rows. It take number as parameter. Example 
 > placing git item with track number inside `git-column` and `git-row`
 
 In inspect element, layout tab at firefox devtools, when you tick the show line tool after ticking your container. There is a number show up from 1,2,3 so on. That is track number. <br/>
-We can take those number and apply it on `git-column` and `git-row`.
+We can take those number and apply it on `git-column: start/end` and `git-row:start/end`.
 example :
 
 ```
 grid-column: 1/-1;
 grid-row: 2/span 3;
 ```
+
 -1 means we take the entire columns or rows.
 
 ### part 11
@@ -79,6 +80,9 @@ this code make your item responsive, not only reduce the size along with screen 
 
 ### part 14
 ---
+> `grid-template-areas` in container with it child `grid-area` in each single item.
+
+see the code, fork and try yourself or watch wesbos video. In container 2, we create grid without `grid-template-columns` and `grid-template-rows` by using `grid-template-areas`.
 
 ### part 15
 ---
