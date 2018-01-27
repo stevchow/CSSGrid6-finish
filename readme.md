@@ -86,8 +86,12 @@ see the code, fork and try yourself or watch wesbos video. In container 2, we cr
 
 ### part 15
 ---
+> assign name to track line use `[]`
 
-### part 15
+`[]` used for name track line, put inside `grid-template-columns` and `grid-template-columns`.
+Put between columns and rows, behave like the track line, at the `grid-gap`, then using those name inside `grid-column` and `grid-row` for each item. You can combine more than one name into `[]`. 
+
+### part 16
 ---
 
 ### part 17
