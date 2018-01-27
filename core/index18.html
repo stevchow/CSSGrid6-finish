@@ -3,41 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CSS Grid part 16 | dense </title>
+  <title>CSS Grid part 18 | individual grid order </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <div class="container">
-  <div class="itm itm1">1</div>
-  <div class="itm itm2">2</div>
-  <div class="itm itm3">3</div>
-  <div class="itm itm4">4</div>
-  <div class="itm itm5">5</div>
-  <div class="itm itm6">6</div>
-  <div class="itm itm7">7</div>
-  <div class="itm itm8">8</div>
-  <div class="itm itm9">9</div>
-  <div class="itm itm10">10</div>
+  <div class="item logo">
+    <p>Logo</p>
+  </div>
+  <div class="item nav">
+    <p>Nav</p>
+  </div>
+  <div class="item content">
+    <p>Content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis neque voluptatibus aut!</p>
+  </div>
 </div>
 <style>
   .container {
     display: grid;
-    border: 10px solid yellow;
-    height: 400px;
     grid-gap: 20px;
-    grid-template-columns: repeat(5, 130px);
-    /* justify-items: center;
-    align-items: center; */
-    /* shorthand for justify and align item*/
-    place-items: strecth strech;
-    /* similiar to flex properties */
-    justify-content: space-between;
-    align-content: space-between;
+    grid-template-columns: repeat(10, 1fr);
   }
-  .itm {
-    background: #bada55;
-    height: 100px;
+  .logo {
+    grid-column: span 2;
+    order: 2;
+  }
+  .nav {
+    grid-column: span 8;
+    order: 1;
+  }
+  .content {
+    grid-column: 1/-1;
+    order : 3;
   }
 </style>
 </body>
