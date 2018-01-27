@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSS Grid 19 | Album (no media queries) </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="albums">
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=1" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=2" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem met consectetur adipisicing elit. Culpa, laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=3" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem consectetur adipisicing elit. Culpa, laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=4" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=5" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem ipsum, dolor sit amet consectetur adipisicin laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=6" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem sxdfsdvcs sdfva, laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=7" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem ipsumamet consectetur adipisicing elit. Culpa, laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=8" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem ipsum, dolor sit amet consectetur adipisiciaborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=9" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorer sit amet consectetur adipisicing elit. Culpa, laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=10" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Loreum, dolt consectetur adipisicing elit. Cborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=11" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lor sit amet consectetur adipisicing elit. Culpa, laborum.</p>
+    </div>
+  </div>
+  <div class="album">
+    <img src="https://source.unsplash.com/random/300x300?v=12" alt="" class="album__artwork">
+    <div class="album__details">
+      <h2>Album Title</h2>
+      <p class="album__artist">Artist name</p>
+      <p class="album__desc">Lorem  consectetur adipisicing elit. Culpa, laborum.</p>
+    </div>
+  </div>
+</div>
+<style>
+  .albums{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .album{
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.09);
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    align-items: center;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .album__artwork{
+    width: 100%;
+    height: auto;
+  }
+
+</style>
+
+</body>
+</html>

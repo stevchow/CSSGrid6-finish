@@ -72,7 +72,7 @@ with `auto-fit` setup, you can't move existing item to explicit end space, becau
 ---
 > parameter `minmax(a,b)`
 
-default use can just use this code
+for default you can just use this code
 ```
 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 ```
@@ -106,9 +106,18 @@ by setting to `dense` in container, browser will automaticly fit every item into
 
 ### part 18
 ---
+> `order:` property in individual grid item.
+
+Used for determine which one go on the top first. Default value is all 0. 
 
 ### part 19
 ---
+> project album with `minmax()`, `auto-fit`, grid in grid
+
+copy and run this code with emmet abbrevation, so powerful!
+```
+.albums>.album*12>img.album__artwork[src="https://sources.splash.com/random/300x300?v=$"]+.album__details>h2{Album Title}+p.album__artist{Artist name}+p.album__desc{Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, laborum}
+```
 
 ### part 20
 ---
