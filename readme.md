@@ -93,9 +93,16 @@ Put between columns and rows, behave like the track line, at the `grid-gap`, the
 
 ### part 16
 ---
+> `grid-auto-flow:dense`
+
+by setting to `dense` in container, browser will automaticly fit every item into columns and rows so there will be no blank or hole left in the container.
 
 ### part 17
 ---
+> `justify-*` for x axis, `align-*` for y axis.
+
+`justify-items` , `align-items` , `justify-content` , and `align-content`.
+>use `place-items` as shorthand of `justify-items` and `align-items`.
 
 ### part 18
 ---
