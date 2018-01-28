@@ -168,6 +168,8 @@ copy and run this code with emmet abbrevation, so powerful!
 
 ---
 
+> codepen UI immitation
+
 ### part 23
 
 ---
