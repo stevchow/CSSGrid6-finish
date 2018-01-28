@@ -174,10 +174,16 @@ copy and run this code with emmet abbrevation, so powerful!
 
 ---
 
+> Bootstrap style with css variable and css grid
+
 ### part 24
 
 ---
 
+> Responsive taco's restaurant website
+
 ### part 25
 
 ---
+
+> Elegant blog with 3 column of css grid
