@@ -162,6 +162,8 @@ copy and run this code with emmet abbrevation, so powerful!
 
 ---
 
+> bunch of little projects, don't check it out, i'll nake one website in the end to wrap it up.
+
 ### part 22
 
 ---

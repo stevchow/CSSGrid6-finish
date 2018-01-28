@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSS Grid part 21 | Flex on Items</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+  <div class="controls">
+    <div class="firstbuttoncontainer">
+      <button>◀️</button>
+      <button>⏯️</button>
+      <button>▶️</button>
+    </div>
+    <div class="scrubber"></div>
+    <div class="secondbuttoncontainer">
+      <button>💬</button>
+      <button>🔈</button>
+    </div>
+  </div>
+
+  <style>
+    .controls {
+      margin: 200px 0;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      /* display: flex; */
+      align-items: center;
+    }
+
+    .scrubber {
+      background: rgb(211, 233, 168);
+      height: 10px;
+      min-width: 100px;
+      border-radius: 10px;
+      /* flex: 1; */
+    }
+  </style>
+</body>
+
+</html>
