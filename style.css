@@ -1,6 +1,6 @@
 body {
-  font-size: 1.5em;
-  color: whitesmoke;
+  font-size: 1.3em;
+  color: rgba(24, 23, 23, 0.966);
   font-family: sans-serif;
   background-image: url('../assets/images/topography.svg'),
     linear-gradient(190deg, yellowgreen, rgba(0, 153, 255, 0.796));
@@ -17,38 +17,44 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 10px 0 5px 0;
-}
-
-img {
-  max-width: 100px;
+  margin: 0px 0 5px 0;
 }
 
 /* main project */
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 30px;
+  grid-template-areas: 'main main main main side';
+  /* grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-gap: 20px;
 }
 
 .main {
+  grid-area: main;
   display: grid;
-  grid-template-rows: 7% 5% repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
 }
+.main__title {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  background: cornflowerblue;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  color: cornsilk;
+}
 
-.main h1 {
-  color: rgb(255, 247, 1);
+.main__title p {
+  font-weight: 200;
 }
 
 .main__project > * {
-  background: salmon;
+  background: rgba(255, 238, 237, 0.699);
   padding: 6px;
 }
-
-.main__project1 {
-  background: whitesmoke url(cssproimages/24.jpg);
-  background-size: contain;
+.main__project {
+  background-image: url(cssproimages/19.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
   background-position: bottom right;
   padding: 50px;
   display: flex;
@@ -57,4 +63,112 @@ img {
   align-items: start;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main__project a {
+  background: none;
+}
+
+.main__project button {
+  cursor: pointer;
+  background: none;
+  border: 2px solid white;
+  color: whitesmoke;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.18);
+  padding: 7px;
+}
+
+.main__project1 {
+  background-image: url(cssproimages/19.jpg);
+}
+.main__project2 {
+  background-image: url(cssproimages/20.jpg);
+}
+.main__project3 {
+  background-image: url(cssproimages/22.png);
+}
+.main__project4 {
+  background-image: url(cssproimages/24.jpg);
+}
+.main__project5 {
+  background-image: url(cssproimages/25.jpg);
+}
+
+/* side */
+.side {
+  grid-area: side;
+  font-family: Tahoma, 'Times New Roman', Times, serif;
+  font-size: 0.7em;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); */
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 100px;
+  grid-gap: 10px;
+}
+
+.item__title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.item__overlay {
+  background: rgba(128, 128, 83, 0.4);
+  grid-column: 1/-1;
+  grid-area: 1/-1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: 0.18s;
+  transform: translateY(100%);
+  /*make it disappear*/
+}
+
+.item__overlay button {
+  background: none;
+  border: 2px solid white;
+  color: whitesmoke;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.18);
+  padding: 7px;
+}
+
+.item__overlay button:hover {
+  cursor: pointer;
+}
+
+.item:hover .item__overlay {
+  transform: translateY(0);
+}
+
+.item img {
+  grid-column: 1/-1;
+  grid-area: 1/-1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    grid-template-areas:
+      'main'
+      'side';
+  }
+  .item__title {
+    grid-column: 1/-1;
+  }
 }
