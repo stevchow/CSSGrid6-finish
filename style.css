@@ -1,0 +1,60 @@
+body {
+  font-size: 1.5em;
+  color: whitesmoke;
+  font-family: sans-serif;
+  background-image: url('../assets/images/topography.svg'),
+    linear-gradient(190deg, yellowgreen, rgba(0, 153, 255, 0.796));
+  background-position: fixed;
+}
+
+p {
+  margin: 0 0 5px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0 5px 0;
+}
+
+img {
+  max-width: 100px;
+}
+
+/* main project */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 7% 5% repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.main h1 {
+  color: rgb(255, 247, 1);
+}
+
+.main__project > * {
+  background: salmon;
+  padding: 6px;
+}
+
+.main__project1 {
+  background: whitesmoke url(cssproimages/24.jpg);
+  background-size: contain;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}

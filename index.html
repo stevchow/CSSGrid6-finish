@@ -4,88 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Try to Resize the window </title>
+  <link rel="stylesheet" href="style.css">
+  <title>Try to Resize the window</title>
 </head>
 
 <body>
 
   <div class="wrapper">
-    <div class="top">
-      <header class="hero">
-        <h1>Gallery</h1>
-        <p>with CSS Grid.</p>
-        <div class="item__overlay">
-          <button>View 🔎</button>
-        </div>
-      </header>
-      <div class="cta cta1">
-        <p class="price">$1.99</p>
-        <p>Tacos</p>
-        <div class="item__overlay">
-          <button>View 🔎</button>
-        </div>
+    <div class="main">
+      <h1>CSSGrid Projects</h1>
+      <p>Done by using VSCode, Firefox for Developer, Emmet Abbrevation, CSS variable, Flexbox, and BEM</p>
+      <div class="main__project main__project1">
+        <h2>Card Gallery</h2>
+        <p>Implementing auto-fit and minmax()</p>
       </div>
-      <div class="cta cta2">
-        <p class="price">$3.99</p>
-        <p>Kombucha</p>
-        <div class="item__overlay">
-          <button>View 🔎</button>
-        </div>
+      <div class="main__project main__project1">
+        <h2>Card Gallery</h2>
+        <p>Implementing auto-fit and minmax()</p>
       </div>
-
+      <div class="main__project main__project1">
+        <h2>Card Gallery</h2>
+        <p>Implementing auto-fit and minmax()</p>
+      </div>
+      <div class="main__project main__project1">
+        <h2>Card Gallery</h2>
+        <p>Implementing auto-fit and minmax()</p>
+      </div>
+      <div class="main__project main__project1">
+        <h2>Card Gallery</h2>
+        <p>Implementing auto-fit and minmax()</p>
+      </div>
+      <div class="main__project main__project2"></div>
+      <div class="main__project main__project3"></div>
+      <div class="main__project main__project4"></div>
+      <div class="main__project main__project5"></div>
     </div>
 
-    <section class="features">
-      <div class="feature">
-        <span class="icon">🌮</span>
-        <h3>Tacos</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-        <div class="item__overlay">
-          <button>View 🔎</button>
-        </div>
-      </div>
-      <div class="feature">
-        <span class="icon">🍺</span>
-        <h3>Beer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-        <div class="item__overlay">
-          <button>View 🔎</button>
-        </div>
-      </div>
-      <div class="feature">
-        <span class="icon">🍷</span>
-        <h3>Wine</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-        <div class="item__overlay">
-          <button>View 🔎</button>
-        </div>
-      </div>
-      <div class="feature">
-        <span class="icon">🎵</span>
-        <h3>Music</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
-        <div class="item__overlay">
-          <button>View 🔎</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <img src="images/queso-taco.png" alt="Yummy Taco" class="about__mockup">
-      <div class="about__details">
-        <h2>Featured Taco</h2>
-        <p>Slim Profile, easy to hold and loaded with cheese.</p>
-        <p>This is the one you have been waiting for</p>
-        <button>Learn More →</button>
-        <div class="item__overlay">
-          <button>View →</button>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="gallery">
+    <section class="side">
       <h2>Instant Grams</h2>
       <div class="item">
         <img src="cssproimages/11.png" alt="">
@@ -230,32 +185,9 @@
           </a>
         </div>
       </div>
-      <img src="cssproimages/12.png" alt="">
-      <img src="cssproimages/13.png" alt="">
-      <img src="cssproimages/14.png" alt="">
-      <img src="cssproimages/15.png" alt="">
-      <img src="cssproimages/16.png" alt="">
-      <img src="cssproimages/17.png" alt="">
-      <img src="cssproimages/18.png" alt="">
-      <img src="cssproimages/21axis.png" alt="">
-      <img src="cssproimages/21center.png" alt="">
-      <img src="cssproimages/21contentright.png" alt="">
-      <img src="cssproimages/21self.png" alt="">
-      <img src="cssproimages/21stack.png" alt="">
-      <img src="cssproimages/21uncontent.png" alt="">
-      <img src="cssproimages/21unknown.png" alt="">
-      <img src="cssproimages/21unnumber.png" alt="">
-      <img src="cssproimages/23.png" alt="">
     </section>
   </div>
   <script>
-    const navButton = document.querySelector('button[aria-expanded]');
-    function toggleNav({ target }) {
-      const ariaExpanded = target.getAttribute('aria-expanded') === 'true' || false;
-      navButton.setAttribute('aria-expanded', !ariaExpanded);
-    }
-
-    navButton.addEventListener('click', toggleNav);
   </script>
 </body>
 
