@@ -3,7 +3,7 @@ body {
   color: rgba(24, 23, 23, 0.966);
   font-family: sans-serif;
   background-image: url('../assets/images/topography.svg'),
-    linear-gradient(190deg, yellowgreen, rgba(0, 153, 255, 0.796));
+    linear-gradient(420deg, yellowgreen, rgb(255, 255, 255));
   background-position: fixed;
 }
 
